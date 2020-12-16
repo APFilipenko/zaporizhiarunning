@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Демо: Интеграция контактной формы в модальное окно</title>
+    <meta name="description" content="Простой пример интеграции стандартной формы контактов в модальное окно" />
+    <meta name="keywords" content="контактная, форма, в модальное, окно, jQuery, интеграция, формы, модалное окно" />
+    <meta name="author" content="Dbmast.ru" />
+    <!-- demo page css -->
+	  <link href="css/demo-page.css" rel="stylesheet">
+    <!-- styles post -->
+	  <link href="css/modal-contact.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- top nav demo page -->
+    <div class="nav-top clearfix">
+        <a href="http://dbmast.ru/"><span>Dobrovoimaster</span></a>
+        <span class="right"><a href="http://dbmast.ru/integraciya-kontaktnoj-formy-v-modalnoe-okno"><span>&laquo; &laquo; Подробнее изучить детали</span></a></span>
+    </div>
+    <!-- Заголовок -->
+    <div class="header">
+      <h1>Интеграция контактной формы в модальное окно</h1>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="main clearfix">
+		    <!-- Левый блок -->
+            <div class="column">
+                <p>
+                   Простой пример интеграции стандартной формы контактов, сформированной средствами css3, в модальное окно работающее на небольшом плагине jQuery. Предоставьте вашим пользователям возможность отправлять сообщения с любой страницы, или отдельной записи сайта (блога). 
+                </p>
+            </div>
+			<!-- Конец левого блока -->
+			<!-- Правый блок -->
+            <div class="column">
+			    <p>
+                   Для просмотра живого примера работы контактной формы в всплывающем модальном окне просто:
+                </p>
+               <div class="down"> 
+                <a href="#?w=500" rel="popup_contact" class="button poplight"><span class="submit">Нажми</span> меня<span class="submit">!</span></a>
+                </div>
+	        </div>
+			<!-- Конец правого блока -->
+        </div>
+      </div>
+      <div id="popup_contact" class="popup_block">
+        <div class="note">
+          <img src="images/form/email.jpg" alt="Контакты" style="float:left;margin:5px 10px 5px 0; " />
+	      <h1>Уважаемые друзья!</h1>
+          <p>
+          Обращаю Ваше внимание, что пункты отмеченные звездочкой, обязательны для заполнения.
+          </p>
+        </div>
+        <form id="form" action="/" method="post">	
+			<fieldset>
+				<p class="first">
+					<label for="name">Имя *</label>
+					<input type="text" name="name" id="name" size="30" />
+				</p>
+				<p>
+					<label for="email">Email *</label>
+					<input type="text" name="email" id="email" size="30" />
+				</p>
+				<p>
+					<label for="web">Вебсайт (не обязательно)</label>
+					<input type="text" name="web" id="web" size="30" />
+				</p>			
+			</fieldset>
+			<fieldset>																			
+				<p>
+					<label for="message">Сообщение:</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</p>								
+			</fieldset>					
+			<p class="submit"><button type="submit">Отправить</button></p>						
+		</form>
+      </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <script src="js/dm-modal.js"></script>
+  </body>
+</html>
